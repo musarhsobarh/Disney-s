@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.topnav{
+    overflow: hidden;
+    background-color:gray;
+    position: relative;
+    display: none;
+}
+
+.topnav #mylinks{
+    display: none;
+}
+/* styling navigation menu link */
+.topnav a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+/* style the hamburger menu */
+.topnav a.icons{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.active{
+    background-color: goldenrod;
+    color: white;
+}
+.logoimg{
+      height: 50px;
+      width: 50px;
+      background: url("./js/4.jpeg");
+      background-position: center;
+      background-size: cover;
+}
+nav{
+    background: gray;
+
+}
+nav ul{
+    display: flex;
+}
+
+    
+
+nav ul li{
+    list-style: none;
+    padding: 40px 55px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover{
+           color: aquamarine;
+}
+
+header{
+    height: 400px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(./js/img/1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+#About{
+    padding: 50px;
+    color:#808080;
+}
+#About h1{
+    margin-bottom: 8px;
+   
+}
+#About p{
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color:#808080;
+}
+#About p a{
+    text-decoration: none;
+    color: coral;
+}
+#Contact{
+    padding: 50px;
+    background: #cccccc;
+}
+#Contact h1{
+    margin-bottom: 15px;
+}
+#Contact p{
+    margin-bottom: 15px;
+    color: #606060;
+    line-height: 1.4;
+
+}
+#Contact h3{
+    margin: 10px 0;
+    color: #606060;
+    margin-bottom: 25px;
+}
+
+.social{
+    width: 200px;
+    margin: 0 auto;
+}
+.fa-facebook{
+    color:  #3b5998;
+    font-size: 25px;
+
+}
+.fa-whatsapp{
+    color:  #25d366;
+    font-size: 25px;
+
+}
+.fa-instagram{
+    color:  #5851DB;
+    font-size: 25px;
+
+}
+.fa-twitter{
+    color:  #00ACEE;
+    font-size: 25px;
+
+}
+.fa-telegram{
+    color:  #229ED9;
+    font-size: 25px;
+
+}
+#News{
+    padding: 50px;
+
+}
+#News h1{
+    margin-bottom: 20px;
+    color: #808080;
+
+}
+#News p{
+    color: #808080;
+    line-height: 1.4;
+}
+#News h3{
+        color: #606060;
+        margin-bottom: 20px;
+
+}
+#News ul{
+    margin-left: 50px;
+}
+#News ul li{
+    margin-bottom: 10px;
+}
+#News ul li a{
+    text-decoration: none;
+    color: coral;
+}
+.wrapper{
+       display: flex;
+
+}
+.col{
+width: 50%;
+height: 400px;;
+}
+.col1{
+    background: url(./js/img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.col2{
+    background: url(./js/img/4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Services{
+    padding: 40px;
+}
+#Services h1{
+         margin-bottom: 15px;
+}
+    
+    
+
+
+
+
+@media screen and (max-width:600px){
+    .topnav{
+        display: block;
+    }
+    nav{
+        display:none;
+    }
+    header h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    header p{
+        text-align: center;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+    }
+   
+    
+}
